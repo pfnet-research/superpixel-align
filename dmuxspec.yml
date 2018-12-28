@@ -1,0 +1,30 @@
+version: 0
+os: ubuntu==16.04
+features:
+- cuda==8.0
+- python==3
+- cudnn==7.0
+- nccl==2.1.4
+- cupy==4.0.0b4
+- chainer==4.0.0b4
+- chainermn==1.2.0
+- chainercv==0.8.0
+- openmpi==2.1
+- opencv==3.2.0
+- apt:ffmpeg
+- pip:pillow==5.0.0
+- pip:pandas==0.22.0
+- pip:imageio==2.2.0
+- pip:pyyaml==3.12
+- pip:matplotlib==2.2.0
+- pip:scipy==1.0.0
+- pip:scikit-image==0.13.1
+hardware:
+- cpu==4
+- ram==16384
+- gpu==1
+- disk==6250
+- ib==1
+datasets:
+- cityscapes==1 @ /home/user/data/cityscapes
+- drn-weights==1 @ /home/user/data/weights
